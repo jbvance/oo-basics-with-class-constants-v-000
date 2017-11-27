@@ -7,8 +7,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-    binding.pry
+    BRANDS << brand if !BRANDS.contain?(brand)
+    #binding.pry
   end
 
   def cobble
